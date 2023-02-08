@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "better_mushrooms",
+  "version": "${version}",
+  "name": "BetterMushrooms",
+  "description": "",
+  "authors": [
+    "Rinuuri"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "./icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.rinuuri.client.BetterMushroomsClient"
+    ],
+    "main": [
+      "ru.rinuuri.BetterMushrooms"
+    ]
+  },
+  "mixins": [
+    "better_mushrooms.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
