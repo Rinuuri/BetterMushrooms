@@ -14,11 +14,11 @@ import java.util.Collection;
 public class ModMushroomGeneration {
 
     public static void generateMushrooms(){
-        /*Collection<RegistryKey<Biome>> biomes = new ArrayList<RegistryKey<Biome>>();
+        Collection<RegistryKey<Biome>> biomes = new ArrayList<RegistryKey<Biome>>();
 
         biomes.add(BiomeKeys.MUSHROOM_FIELDS);
-        biomes.add(BiomeKeys.DARK_FOREST);*/
+        biomes.add(BiomeKeys.DARK_FOREST);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.MUSHROOM_FIELDS), GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.huge_chanterelle_placed.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(biomes), GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.huge_chanterelle_placed.getKey().get());
     }
 }
